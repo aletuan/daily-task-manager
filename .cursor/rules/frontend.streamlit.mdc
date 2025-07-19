@@ -1,0 +1,17 @@
+# .cursor/rules/frontend.streamlit.mdc
+
+name: Streamlit Frontend Rule
+scope: frontend
+---
+
+- Use `st.title`, `st.button`, `st.write` for UI components.
+- Don't use raw HTML; prefer Streamlit-native elements.
+- Keep the app single-page with clear sections for today's tasks and upcoming tasks.
+- Use `st.dataframe` to display tables or task status.
+- Use `st.drag_and_drop` if available for task board visualization.
+- Keep logic inside `app.py`, split long functions into helper modules if needed.
+- Minimize direct state mutation, use `st.session_state` for interactive states.
+description:
+globs:
+alwaysApply: false
+---

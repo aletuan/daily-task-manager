@@ -1,0 +1,18 @@
+# .cursor/rules/backend.fastapi.mdc
+
+name: FastAPI Backend Rule
+scope: backend
+---
+
+- Use FastAPI's dependency injection for database sessions.
+- Use Pydantic models for request/response schemas.
+- Follow RESTful API design for routes.
+- Scaffold endpoints inside `app.py`.
+- Include CORS middleware if needed (use `fastapi.middleware.cors`).
+- Use `uvicorn` for local development and testing.
+- Organize routers in `routers/` folder, keep models in `models/`.
+- Use `async def` consistently for endpoint handlers.
+description:
+globs:
+alwaysApply: false
+---
